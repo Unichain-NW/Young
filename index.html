@@ -13,6 +13,7 @@
             align-items: flex-start;
             height: 100vh;
             background-color: rgb(72, 31, 103); /* 设置背景颜色 */
+            position: relative; /* 添加定位上下文 */
         }
         img {
             max-width: 100%;
@@ -20,9 +21,23 @@
             display: block;
             margin: 0 auto;
         }
+        .footer {
+            position: absolute;
+            bottom: 58px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: Arial, sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 28px; /* 设置字体大小为28号 */
+        }
     </style>
 </head>
 <body>
     <img src="YoungCV.png" alt="YoungCV">
+    <div class="footer">
+        Shanghai NW Tech Co., Ltd.
+    </div>
 </body>
 </html>
